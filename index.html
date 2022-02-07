@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<title>Mathew Enterprises</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="LOGO.png" type="image/gif" sizes="16x16" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>MATHEW<br>ENTERPRISES</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#address" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Address</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>MATHEW ENTERPRISES</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="text-blue"><b>Welcomes you to our Heaven</b></h1>
+    <div class="w3-content w3-section" style="max-width:100%">
+      <img class="mySlides" src="https://static.toiimg.com/thumb/msid-62273434,width-1200,height-900,resizemode-4/.jpg" style="width:100%">
+      <img class="mySlides" src="https://cdn.hirunews.lk/Data/News_Images/202006/1591797214_6225973_hirunews_Pepper-land.jpg" style="width:100%">
+      <img class="mySlides" src="https://content3.jdmagicbox.com/comp/kannur/v7/9999px497.x497.171014184012.v7v7/catalogue/jdm-group-mathil-kannur-poultry-farms-vlkgkc7uvd.jpg" style="width:100%">
+    </div>
+  </div>
+<script>
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="w3-container" id="services" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-blue"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid primary" class="w3-round">
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="https://businesspost.ng/wp-content/uploads/2021/08/Dairy-Farming.jpg" alt="John" style="width:100%;height:200px;">
+          <div class="w3-container">
+            <h3>cattle farming</h3>
+            <p class="w3-opacity">Milk and Curd</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="https://d2xsikgwxkxyoe.cloudfront.net/media/42077/fish-rearing.jpg" alt="Jane" style="width:100%;height:200px;">
+          <div class="w3-container">
+            <h3>Fish Farming</h3>
+            <p class="w3-opacity">Sea and ocean fishes</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="https://m.media-amazon.com/images/I/817V0p29DvL._SL1500_.jpg" alt="Mike" style="width:100%;height:200px">
+          <div class="w3-container">
+            <h3>Grains Cultivation</h3>
+            <p class="w3-opacity">Pepper and other spices</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>ABOUT US!..</b></h1>
+    <hr style="width:50px;border:5px solid bg-primary" class="w3-round">
+    <p>One of the best Farm in the State.........</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="LOGO1.png" alt="John" style="width:100%;height:200px">
+        <div class="w3-container">
+          <h3>Who we are?</h3>
+          <p class="w3-opacity">An Enterprises company</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://media.istockphoto.com/photos/selecting-excellent-quality-to-increase-customer-satisfaction-quality-picture-id1305984152?b=1&k=20&m=1305984152&s=170667a&w=0&h=qUj2LdEh_8UYKDV9djT0vCVldaGsDGw9wTZKIk9cGxw=" alt="Jane" style="width:100%;height:200px;">
+        <div class="w3-container">
+          <h3>Why us?</h3>
+          <p class="w3-opacity">Deliver with the best quality</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://content3.jdmagicbox.com/comp/def_content/milk_dairy/default-milk-dairy-2.jpg?clr=1b3b4b" alt="Mike" style="width:100%;height:200px;">
+        <div class="w3-container">
+          <h3>What we deliver?</h3>
+          <p class="w3-opacity">Fresh and pure products</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid bg-primary" class="w3-round">
+    <p> Fill out the form and fill me in with the details ... We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Contact number</label>
+        <input class="w3-input w3-border" type="text" name="number" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+  <div class="container bg-white p-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-image: url('https://images.unsplash.com/photo-1489702932289-406b7782113c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80');">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4iGwgCMHsNvU_QDRNexlTSzLw-haZZxg9W8wlhCbOB0GEM8rOyWNDPzk8AUToLjCtDeQ&usqp=CAU" class="card-img-top "style="padding-right:30px padding-left:30px" alt="">
+                    <h5 class="card-title text-align:center"style="color:white" id="address">Farm Address</h5>
+                    <p class="card-text"style="color:white">EP.2.175A,Vanchiyam <br>Pottenplave P.O<br> Kannur,Kerala,India-670582
+                    </p>
+                    <a href="https://www.google.com/maps/place/Vanchiyam,+Kerala+670582/@12.1440843,75.5902371,18z/data=!4m5!3m4!1s0x3ba449339b917857:0x54853f34e74589b1!8m2!3d12.144069!4d75.5909816" style="color:white">Click here for navigation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">copy right© 2022 <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">gb solutions</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
